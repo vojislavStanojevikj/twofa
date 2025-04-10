@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: twofa
+
+qr:
+  width: 350
+  height: 350
+  format: PNG
+  uri: otpauth://totp/%s?secret=%s&issuer=TwoFa&algorithm=SHA1&digits=6&period=30
